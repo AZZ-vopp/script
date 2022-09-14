@@ -104,3 +104,7 @@ location ~ .*\.(js|css)?$
 ```
 php /www/wwwroot/speed4g.me/artisan schedule:run
 ```
+# INDEX
+```
+<?php header('Location: https://speed4g.me');
+```
