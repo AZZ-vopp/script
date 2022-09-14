@@ -108,3 +108,32 @@ php /www/wwwroot/speed4g.me/artisan schedule:run
 ```
 <?php header('Location: https://speed4g.me');
 ```
+# CONFIG NGINX ANTI DDOS
+```
+limit_req_zone $binary_remote_addr zone=one:10m rate=30r/m;
+limit_conn_zone $binary_remote_addr zone=addr:10m;
+```
+```
+limit_req_zone $binary_remote_addr zone=one:10m rate=30r/m;
+limit_conn_zone $binary_remote_addr zone=addr:10m;
+```
+```
+    client_body_timeout 3s;
+    client_header_timeout 3s;
+    location = / {
+        
+        limit_conn addr 5;
+        limit_req zone=one;
+        
+        
+        }
+    if ($host != speed4g.me){
+           return 444;
+        }
+```
+```
+include "/etc/nginx/conf/cloudflare.conf";
+```
+```
+include "/etc/nginx/conf/cloudflare.conf";
+```
