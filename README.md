@@ -153,5 +153,22 @@ firewall-cmd --reload
 ```
 <audio preload="" autoplay="" loop="">
 <source src="link" type="audio/mpeg">
- </audio>
+</audio>
+```
+# DEVELOPER
+BEAUTIFULL CODE
+```
+https://beautifier.io
+```
+ENC JS
+```
+https://jscompress.com
+```
+ENC CSS
+```
+https://www.toptal.com/developers/cssminifier
+```
+ENC-DEC JS
+```
+https://r12a.github.io/app-conversion
 ```
