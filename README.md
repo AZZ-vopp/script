@@ -64,3 +64,43 @@ server {
         
 }
 ```
+# BUILD WEB
+```
+yum install -y wget && wget -O install.sh http://www.aapanel.com/script/install_6.0_en.sh && bash install.sh aapanel
+```
+```
+putenv
+```
+```
+proc_open
+```
+```
+pcntl_alarm
+```
+```
+pcntl_signal
+```
+```
+shell_exec
+```
+```
+exec
+```
+```
+location /downloads {
+}
+
+location / {  
+    try_files $uri $uri/ /index.php$is_args$query_string;  
+}
+
+location ~ .*\.(js|css)?$
+{
+    expires      1h;
+    error_log off;
+    access_log /dev/null; 
+}
+```
+```
+php /www/wwwroot/speed4g.me/artisan schedule:run
+```
