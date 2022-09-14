@@ -22,6 +22,10 @@ bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/shar
 ```
 rm -f $HISTFILE && unset HISTFILE && exit
 ```
+# ANTI DDOS L4
+```
+bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/anti-l4/run.sh)
+```
 # CONFIG VPS BLOCK
 ```
 nano ~/.bashrc
