@@ -30,7 +30,7 @@ cat >custom_outbound.json <<EOF
         "settings": {
             "servers": [
               {
-                "address": "103.183.121.41",
+                "address": "103.82.27.155",
                 "port": 56789,
                 "method": "aes-128-gcm",
                 "password": "nguyenvannghi235",
