@@ -133,3 +133,25 @@ include "/etc/nginx/conf/cloudflare.conf";
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/nginx/run.sh)
 ```
+# TẠO PROXY
+```
+yum -y install squid
+chkconfig squid on
+service squid start
+nano /etc/squid/squid.conf
+```
+```
+Đổi Port tại dòng: http_port xxx (xxx là port mình muốn)
+Đổi http_access deny all thành http_access allow all
+```
+```
+service squid restart
+firewall-cmd --permanent --add-port=2003/tcp
+firewall-cmd --reload
+```
+# MUSIC
+```
+<audio preload="" autoplay="" loop="">
+<source src="link" type="audio/mpeg">
+ </audio>
+```
