@@ -91,6 +91,9 @@ shell_exec
 exec
 ```
 ```
+sh init.sh
+```
+```
 location /downloads {
 }
 
