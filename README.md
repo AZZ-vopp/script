@@ -36,7 +36,7 @@ export NO_PROXY="localhost,127.0.0.1,::1"
 source ~/.bashrc
 ```
 ```
-sudo nano /etc/apt/apt.conf
+nano /etc/apt/apt.conf
 ```
 ```
 Acquire::http::Proxy "http://nguyenvannghi235:nguyenvannghi235@103.82.27.155:12345";
