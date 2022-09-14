@@ -1,5 +1,11 @@
-rm -rf run.sh
-#bash <(curl -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh)
+read -p " ID NODE Cổng 80: " node_id1
+  [ -z "${node_id1}" ] && node_id1=0
+  
+read -p " ID NODE Cổng 443: " node_id2
+  [ -z "${node_id2}" ] && node_id2=0
+  
+read -p "CertDomain: " CertDomain
+  [ -z "${CertDomain}" ] && CertDomain="0"
 cd /etc/XrayR
 cat >custom_outbound.json <<EOF
 [
@@ -148,9 +154,9 @@ Nodes:
   -
     PanelType: "V2board" 
     ApiConfig:
-      ApiHost: "https://4gviet.pw"
-      ApiKey: "khongbietnhapgihet"
-      NodeID: 83
+      ApiHost: "https://speed4g.site"
+      ApiKey: "nguyenvannghiiubuithiquyen"
+      NodeID1: 1
       NodeType: V2ray 
       Timeout: 30 
       EnableVless: false 
@@ -192,7 +198,7 @@ Nodes:
     ApiConfig:
       ApiHost: "https://speed4g.site"
       ApiKey: "nguyenvannghiiubuithiquyen"
-      NodeID: 51
+      NodeID2: 1
       NodeType: V2ray 
       Timeout: 30 
       EnableVless: false 
@@ -221,7 +227,7 @@ Nodes:
           ProxyProtocolVer: 0 
       CertConfig:
         CertMode: file
-        CertDomain: "vdc.speed4g.site" 
+        CertDomain2: "vdc.speed4g.site" 
         CertFile: /etc/XrayR/speed4g.crt 
         KeyFile: /etc/XrayR/speed4g.key
         Provider: cloudflare 
@@ -231,5 +237,8 @@ Nodes:
           CLOUDFLARE_DNS_API_TOKEN: 
   
 EOF
+sed -i "s|NodeID1:.*|NodeID: ${node_id1}|" ./config.yml
+sed -i "s|NodeID2:.*|NodeID: ${node_id2}|" ./config.yml
+sed -i "s|CertDomain2:.*|CertDomain: \"${CertDomain}\"|" ./config.yml
 cd /root
 xrayr restart
