@@ -42,3 +42,25 @@ nano /etc/apt/apt.conf
 Acquire::http::Proxy "http://nguyenvannghi235:nguyenvannghi235@103.82.27.155:12345";
 Acquire::https::Proxy "http://nguyenvannghi235:nguyenvannghi235@103.82.27.155:12345";
 ```
+# CONFIG NGINX SHARE PORT
+```
+server {
+        listen 80;
+        location /speed4g.me {
+                proxy_pass http://127.0.0.1:1010;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection "upgrade";
+                proxy_set_header Host $http_host;
+        }
+        
+        location /speed4g.me {
+                proxy_pass http://127.0.0.1:1020;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection "upgrade";
+                proxy_set_header Host $http_host;
+        }
+        
+}
+```
