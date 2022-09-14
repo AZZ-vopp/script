@@ -108,9 +108,6 @@ location ~ .*\.(js|css)?$
     access_log /dev/null; 
 }
 ```
-```
-php /www/wwwroot/speed4g.me/artisan schedule:run
-```
 # INDEX
 ```
 <?php header('Location: https://speed4g.me');
@@ -178,6 +175,28 @@ https://www.toptal.com/developers/cssminifier
 ENC-DEC JS
 ```
 https://r12a.github.io/app-conversion
+```
+# CRON
+WEB V2BOARD
+```
+php /www/wwwroot/speed4g.me/artisan schedule:run
+```
+DELETE LOG
+```
+rm -rf /www/wwwlogs/*
+rm -rf /www/wwwroot/speed4g.me/storage/logs/*
+rm -rf /www/wwwroot/speed4g.net/storage/logs/*
+rm -rf /www/wwwroot/speed4g.site/storage/logs/*
+rm -rf /www/backup/database/*
+```
+API MOMO
+```
+* * * * * php /www/wwwroot/apimomo.net/index.php cron CAdmin logsrefresh > /dev/null &
+* * * * * php /www/wwwroot/apimomo.net/index.php cron CAdmin getWebhookWaiting > /dev/null &
+* * * * * php /www/wwwroot/apimomo.net/index.php cron CAdmin logsrefreshv2 > /dev/null &
+* * * * * sleep 20;php /www/wwwroot/apimomo.net/index.php cron CAdmin logsrefreshv2 > /dev/null &
+* * * * * sleep 40;php /www/wwwroot/apimomo.net/index.php cron CAdmin logsrefreshv2 > /dev/null &
+* * * * * php /www/wwwroot/apimomo.net/index.php account CAdmin checkDeactive > /dev/null &
 ```
 # SSL CLOUDFLARE
 PRIVATE
