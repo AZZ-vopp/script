@@ -1,4 +1,3 @@
-rm -rf speedtest.sh
 clear
 echo "   SPEEDTEST BY ADMIN SPEED4G.ME"
 echo "   1. SETUP"
