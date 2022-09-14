@@ -91,6 +91,14 @@ shell_exec
 exec
 ```
 ```
+composer update
+php artisan package:discover --ansi
+composer dump-autoload --ignore-platform-reqs
+composer dump-autoload
+sh init.sh
+sudo php artisan config:clear
+```
+```
 sh init.sh
 ```
 ```
