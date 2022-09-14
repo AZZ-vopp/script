@@ -114,10 +114,6 @@ limit_req_zone $binary_remote_addr zone=one:10m rate=30r/m;
 limit_conn_zone $binary_remote_addr zone=addr:10m;
 ```
 ```
-limit_req_zone $binary_remote_addr zone=one:10m rate=30r/m;
-limit_conn_zone $binary_remote_addr zone=addr:10m;
-```
-```
     client_body_timeout 3s;
     client_header_timeout 3s;
     location = / {
