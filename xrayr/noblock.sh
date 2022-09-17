@@ -6,7 +6,7 @@ read -p " ID NODE Cổng 443: " node_id2
   [ -z "${node_id2}" ] && node_id2=0
   
 read -p "CertDomain: " CertDomain
-  [ -z "${CertDomain}" ] && CertDomain="0"
+  [ -z "${CertDomain}" ] && CertDomain="vn.speed4g.me"
   
 cd /etc/XrayR
 cat >speed4g.crt <<EOF
