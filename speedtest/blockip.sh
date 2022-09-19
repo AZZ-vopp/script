@@ -79,7 +79,17 @@ iptables -I INPUT -s 24.244.63.34 -j DROP
 iptables -I INPUT -s 108.177.127.153 -j DROP
 iptables -I INPUT -s 52.51.158.47 -j DROP
 iptables -I INPUT -s 64.246.132.194 -j DROP
-iptables -I INPUT -s 139.162.23.4 -j DROP
 iptables -I INPUT -s 202.158.8.14 -j DROP
+iptables -I INPUT -s 139.162.23.4 -j DROP
+iptables -I INPUT -s 172.105.174.7 -j DROP
+iptables -I INPUT -s 172.105.33.31 -j DROP
+iptables -I INPUT -s 139.162.65.37 -j DROP
+iptables -I INPUT -s 139.162.130.8 -j DROP
+iptables -I INPUT -s 176.58.107.39 -j DROP
+iptables -I INPUT -s 172.105.30.21 -j DROP
+iptables -I INPUT -s 50.116.57.237 -j DROP
+iptables -I INPUT -s 50.116.39.117 -j DROP
+iptables -I INPUT -s 50.116.25.154 -j DROP
+iptables -I INPUT -s 50.116.14.9 -j DROP
 clear
 echo "   DONE !"
