@@ -58,7 +58,7 @@ server {
                 proxy_set_header Host $http_host;
         }
         
-        location /speed4g.me {
+        location /data4g.me {
                 proxy_pass http://127.0.0.1:1020;
                 proxy_http_version 1.1;
                 proxy_set_header Upgrade $http_upgrade;
