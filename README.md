@@ -21,6 +21,9 @@ bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/shar
 ```
 worker_rlimit_nofile 65535;
 ```
+```
+openssl req -newkey rsa:2048 -x509 -sha256 -days 365 -nodes -out /etc/XrayR/speed4g.crt -keyout /etc/XrayR/speed4g.key -subj "/C=JP/ST=Tokyo/L=Chiyoda-ku/O=Google Trust Services LLC/CN=google.com"
+```
 # DELETE HISTORY
 ```
 rm -f $HISTFILE && unset HISTFILE && exit
