@@ -2,12 +2,12 @@ cd /etc/nginx
 cat >nginx.conf <<EOF
 user www-data;
 worker_processes auto;
+worker_rlimit_nofile 65535;
 pid /run/nginx.pid;
 include /etc/nginx/modules-enabled/*.conf;
 events {
 	worker_connections 65535;
 }
-worker_rlimit_nofile 65535;
 http {
   sendfile on;
 	tcp_nopush on;
