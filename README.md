@@ -18,6 +18,9 @@ bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xray
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/shareport/run.sh)
 ```
+```
+worker_rlimit_nofile 65535;
+```
 # DELETE HISTORY
 ```
 rm -f $HISTFILE && unset HISTFILE && exit
