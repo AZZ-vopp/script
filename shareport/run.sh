@@ -5,7 +5,7 @@ echo "   3. START"
 read -p "  Vui Lòng Nhập : " num
 
     case "${num}" in
-        1) apt update -y && apt install nginx -y && ufw allow 'Nginx HTTP' && systemctl start nginx
+        1) apt update -y && apt install nginx -y && ufw allow 'Nginx HTTP' && systemctl start nginx && bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/shareport/config.sh)
         ;;
         2) nano /etc/nginx/sites-available/default
         ;;
