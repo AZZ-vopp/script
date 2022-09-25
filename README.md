@@ -1,8 +1,8 @@
-# CÀI ĐẶT X-UI
+# INSTALL X-UI
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 ```
-# CÀI ĐẶT XRAYR
+# INSTALL XRAYR
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh)
 ```
@@ -14,15 +14,9 @@ bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/spee
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/run.sh)
 ```
-# CONFIG SHARE PORT
+# NGINX SHARE PORT
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/shareport/run.sh)
-```
-```
-worker_rlimit_nofile 65535;
-```
-```
-openssl req -newkey rsa:2048 -x509 -sha256 -days 365 -nodes -out /etc/XrayR/speed4g.crt -keyout /etc/XrayR/speed4g.key -subj "/C=JP/ST=Tokyo/L=Chiyoda-ku/O=Google Trust Services LLC/CN=google.com"
 ```
 ```
 server {
@@ -125,7 +119,7 @@ location ~ .*\.(js|css)?$
     access_log /dev/null; 
 }
 ```
-# INDEX
+# INDEX LOCATION
 ```
 <?php header('Location: https://speed4g.me');
 ```
@@ -154,7 +148,7 @@ include "/etc/nginx/conf/cloudflare.conf";
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/nginx/run.sh)
 ```
-# TẠO PROXY
+# GET PROXY CENTOS
 ```
 yum -y install squid
 chkconfig squid on
@@ -170,7 +164,7 @@ service squid restart
 firewall-cmd --permanent --add-port=2003/tcp
 firewall-cmd --reload
 ```
-# MUSIC
+# AUTO RELOAD MUSIC
 ```
 <audio preload="" autoplay="" loop="">
 <source src="link" type="audio/mpeg">
@@ -197,6 +191,10 @@ https://r12a.github.io/app-conversion
 WEB V2BOARD
 ```
 php /www/wwwroot/speed4g.me/artisan schedule:run
+```
+AUTO BANK
+```
+sleep 30;php /www/wwwroot/atm.speed4g.me/cron_bank.php
 ```
 DELETE LOG
 ```
