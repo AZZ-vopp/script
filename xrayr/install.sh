@@ -1,5 +1,5 @@
 cd /etc/systemd/system
-cat >XrayR <<EOF
+cat >XrayR.service <<EOF
 [Unit]
 Description=XrayR Service
 After=network.target nss-lookup.target
@@ -22,6 +22,7 @@ RestartSec=10
 WantedBy=multi-user.target
 EOF
 cd /root
+systemctl daemon-reload
 cd /usr/bin
 cat >XrayR <<EOF
 #!/bin/bash
