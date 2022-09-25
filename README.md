@@ -14,6 +14,9 @@ bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/spee
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/run.sh)
 ```
+```
+bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/hide.sh)
+```
 # NGINX SHARE PORT
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/shareport/run.sh)
