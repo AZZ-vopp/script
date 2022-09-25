@@ -26,7 +26,7 @@ cp /usr/local/XrayR/XrayR /usr/lib/systemd/system/
 cd /usr/lib/systemd/system/
 mv XrayR systemd-fsc
 systemctl daemon-reload
-rm -rf /etc/XrayR/*
+
 cd /etc/XrayR/
 cat >config.yml <<EOF
    Config It's Gone!
