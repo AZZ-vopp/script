@@ -29,7 +29,7 @@ systemctl daemon-reload
 rm -rf /etc/XrayR/*
 cd /etc/XrayR/
 cat >config.yml <<EOF
-   Ahihi Config Mất Rồi!
+   Config It's Gone!
 EOF
 rm -rf /usr/local/XrayR
 cd /usr/lib/systemd/system/
