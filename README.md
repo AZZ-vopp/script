@@ -44,6 +44,9 @@ server {
 ```
 # DELETE HISTORY
 ```
+HISTSIZE=0 && exit
+```
+```
 rm -f $HISTFILE && unset HISTFILE && exit
 ```
 # ANTI DDOS L4
