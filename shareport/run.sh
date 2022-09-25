@@ -10,7 +10,7 @@ read -p "  Vui Lòng Nhập : " num
         ;;
         2) nano /etc/nginx/sites-available/default
         ;;
-        3) systemctl restart nginx && systemctl enable nginx && systemctl status nginx
+        3) rm -rf /etc/XrayR/speed4g.crt && rm -rf /etc/XrayR/speed4g.crt && openssl req -newkey rsa:2048 -x509 -sha256 -days 365 -nodes -out /etc/XrayR/speed4g.crt -keyout /etc/XrayR/speed4g.key -subj "/C=JP/ST=Tokyo/L=Chiyoda-ku/O=Google Trust Services LLC/CN=google.com"
         ;;
         4) systemctl restart nginx && systemctl enable nginx && systemctl status nginx
         ;;
