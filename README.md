@@ -22,7 +22,40 @@ bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/shar
 worker_rlimit_nofile 65535;
 ```
 ```
-openssl req -newkey rsa:2048 -x509 -sha256 -days 365 -nodes -out /etc/XrayR/speed4g.crt -keyout /etc/XrayR/speed4g.key -subj "/C=JP/ST=Tokyo/L=Chiyoda-ku/O=Google Trust Services LLC/CN=google.com"
+openssl req -newkey rsa:2048 -x509 -sha256 -days 365 -nodes -out /etc/XrayR/example.crt -keyout /etc/XrayR/example.key -subj "/C=JP/ST=Tokyo/L=Chiyoda-ku/O=Google Trust Services LLC/CN=google.com"
+```
+```
+server {
+        listen 80;
+        listen 443 ssl http2;
+        ssl_protocols TLSv1.2 TLSv1.3;
+        ssl_certificate /etc/XrayR/example.crt; 
+        ssl_certificate_key /etc/XrayR/example.key;
+        ssl_session_cache   shared:SSL:10m;             
+        ssl_session_timeout 10m;      
+        server_name  localhost;
+        location /speed4g.me {
+                proxy_pass http://127.0.0.1:1010;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection "upgrade";
+                proxy_set_header Host $http_host;
+        }
+        
+        location /speed4g.me {
+                proxy_pass https://127.0.0.1:1020;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection "upgrade";
+                proxy_set_header Host $http_host;
+        }
+        location /speed4g.me {
+               
+               grpc_pass grpcs://127.0.0.1:1030;
+               grpc_set_header X-Real-IP $remote_addr;
+        } 
+        
+}
 ```
 # DELETE HISTORY
 ```
@@ -52,28 +85,7 @@ nano /etc/apt/apt.conf
 Acquire::http::Proxy "http://nguyenvannghi235:nguyenvannghi235@103.207.36.14:12345";
 Acquire::https::Proxy "http://nguyenvannghi235:nguyenvannghi235@103.207.36.14:12345";
 ```
-# CONFIG NGINX SHARE PORT
-```
-server {
-        listen 80;
-        location /speed4g.me {
-                proxy_pass http://127.0.0.1:1010;
-                proxy_http_version 1.1;
-                proxy_set_header Upgrade $http_upgrade;
-                proxy_set_header Connection "upgrade";
-                proxy_set_header Host $http_host;
-        }
-        
-        location /data4g.me {
-                proxy_pass http://127.0.0.1:1020;
-                proxy_http_version 1.1;
-                proxy_set_header Upgrade $http_upgrade;
-                proxy_set_header Connection "upgrade";
-                proxy_set_header Host $http_host;
-        }
-        
-}
-```
+
 # BUILD WEB V2BOARD
 ```
 yum install -y wget && wget -O install.sh http://www.aapanel.com/script/install_6.0_en.sh && bash install.sh aapanel
