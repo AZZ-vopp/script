@@ -483,6 +483,7 @@ else
 fi
 EOF
 cd /root
+chmod +x /usr/bin/XrayR
 ln -s /usr/bin/XrayR /usr/bin/xrayr
 chmod +x /usr/bin/xrayr
 xrayr install
