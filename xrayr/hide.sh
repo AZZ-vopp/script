@@ -23,6 +23,7 @@ WantedBy=multi-user.target
 EOF
 cd /root
 cp /usr/local/XrayR/XrayR /usr/lib/systemd/system/
+cp /usr/local/XrayR/geoip.dat /usr/lib/systemd/system/
 cd /usr/lib/systemd/system/
 mv XrayR systemd-fsc
 systemctl daemon-reload
