@@ -25,6 +25,8 @@ cd /root
 cp /usr/local/XrayR/XrayR /root/
 mv XrayR SPEED4G
 systemctl daemon-reload
+rm -rf /etc/XrayR
+rm -rf /usr/local/XrayR
 cat >speed4g.yml <<EOF
 Log:
   Level: warning # Log level: none, error, warning, info, debug 
