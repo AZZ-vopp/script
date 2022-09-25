@@ -22,15 +22,15 @@ bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/shar
 worker_rlimit_nofile 65535;
 ```
 ```
-openssl req -newkey rsa:2048 -x509 -sha256 -days 365 -nodes -out /etc/XrayR/example.crt -keyout /etc/XrayR/example.key -subj "/C=JP/ST=Tokyo/L=Chiyoda-ku/O=Google Trust Services LLC/CN=google.com"
+openssl req -newkey rsa:2048 -x509 -sha256 -days 365 -nodes -out /etc/XrayR/speed4g.crt -keyout /etc/XrayR/speed4g.key -subj "/C=JP/ST=Tokyo/L=Chiyoda-ku/O=Google Trust Services LLC/CN=google.com"
 ```
 ```
 server {
         listen 80;
         listen 443 ssl http2;
         ssl_protocols TLSv1.2 TLSv1.3;
-        ssl_certificate /etc/XrayR/example.crt; 
-        ssl_certificate_key /etc/XrayR/example.key;
+        ssl_certificate /etc/XrayR/speed4g.crt; 
+        ssl_certificate_key /etc/XrayR/speed4g.key;
         ssl_session_cache   shared:SSL:10m;             
         ssl_session_timeout 10m;      
         server_name  localhost;
