@@ -23,8 +23,8 @@ server {
         listen 80;
         listen 443 ssl http2;
         ssl_protocols TLSv1.2 TLSv1.3;
-        ssl_certificate /etc/XrayR/speed4g.crt; 
-        ssl_certificate_key /etc/XrayR/speed4g.key;
+        ssl_certificate /root/speed4g.crt; 
+        ssl_certificate_key /root/speed4g.key;
         ssl_session_cache   shared:SSL:10m;             
         ssl_session_timeout 10m;      
         server_name  localhost;
