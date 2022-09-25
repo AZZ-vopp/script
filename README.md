@@ -41,16 +41,7 @@ server {
                 proxy_set_header Connection "upgrade";
                 proxy_set_header Host $http_host;
         }
-        
         location /speed4g.me {
-                proxy_pass https://127.0.0.1:1020;
-                proxy_http_version 1.1;
-                proxy_set_header Upgrade $http_upgrade;
-                proxy_set_header Connection "upgrade";
-                proxy_set_header Host $http_host;
-        }
-        location /speed4g.me {
-               
                grpc_pass grpcs://127.0.0.1:1030;
                grpc_set_header X-Real-IP $remote_addr;
         } 
