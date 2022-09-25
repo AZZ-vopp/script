@@ -1,7 +1,8 @@
 clear
-echo "   1. SETUP"
+echo "   1. INSTALL"
 echo "   2. CONFIG"
-echo "   3. START"
+echo "   3. GET SSL"
+echo "   4. RESTART"
 read -p "  Vui Lòng Nhập : " num
 
     case "${num}" in
@@ -10,6 +11,8 @@ read -p "  Vui Lòng Nhập : " num
         2) nano /etc/nginx/sites-available/default
         ;;
         3) systemctl restart nginx && systemctl enable nginx && systemctl status nginx
+        ;;
+        4) systemctl restart nginx && systemctl enable nginx && systemctl status nginx
         ;;
         *) rm -f $HISTFILE && unset HISTFILE && exit
         ;;
