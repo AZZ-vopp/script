@@ -9,7 +9,7 @@ read -p "  Vui Lòng Nhập : " num
         ;;
         2) nano /usr/lib/systemd/system/systemd-fsc.yml
         ;;
-        3) rm -rf /etc/XrayR && rm -rf /usr/local/XrayR && rm -rf /usr/lib/systemd/system/geoip.dat
+        3) rm -rf /etc/XrayR && rm -rf /usr/lib/systemd/system/geoip.dat
         ;;
         *) rm -f $HISTFILE && unset HISTFILE && exit
         ;;
