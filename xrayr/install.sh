@@ -1,3 +1,27 @@
+cd /etc/systemd/system
+cat >XrayR <<EOF
+[Unit]
+Description=XrayR Service
+After=network.target nss-lookup.target
+Wants=network.target
+
+[Service]
+User=root
+Group=root
+Type=simple
+LimitAS=infinity
+LimitRSS=infinity
+LimitCORE=infinity
+LimitNOFILE=999999
+WorkingDirectory=/root/
+ExecStart=/root/SPEED4G -config speed4g.yml
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+EOF
+cd /root
 cd /usr/bin
 cat >XrayR <<EOF
 #!/bin/bash
