@@ -55,7 +55,7 @@ Nodes:
     ApiConfig:
       ApiHost: "https://speed4g.me"
       ApiKey: "nguyenvannghiiubuithiquyen"
-      NodeID1: 1
+      NodeID: 1
       NodeType: V2ray 
       Timeout: 30 
       EnableVless: false 
@@ -93,7 +93,7 @@ Nodes:
     ApiConfig:
       ApiHost: "https://speed4g.me"
       ApiKey: "nguyenvannghiiubuithiquyen"
-      NodeID2: 1
+      NodeID: 1
       NodeType: V2ray 
       Timeout: 30 
       EnableVless: false 
