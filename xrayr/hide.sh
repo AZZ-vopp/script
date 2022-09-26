@@ -80,7 +80,7 @@ Nodes:
           ProxyProtocolVer: 0 
       CertConfig:
         CertMode: none 
-        CertDomain1: "vn.speed4g.me" 
+        CertDomain: "vn.speed4g.me" 
         CertFile: speed4g.crt
         KeyFile: speed4g.key
         Provider: cloudflare 
@@ -118,7 +118,7 @@ Nodes:
           ProxyProtocolVer: 0 
       CertConfig:
         CertMode: file 
-        CertDomain2: "vn.speed4g.me" 
+        CertDomain: "vn.speed4g.me" 
         CertFile: speed4g.crt 
         KeyFile: speed4g.key
         Provider: cloudflare 
