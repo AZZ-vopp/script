@@ -129,9 +129,9 @@ Nodes:
           CLOUDFLARE_EMAIL: 
           CLOUDFLARE_API_KEY: 
 EOF
-sed -i "s|NodeID1:.*|NodeID: ${node_id1}|" ./config.yml
-sed -i "s|NodeID2:.*|NodeID: ${node_id2}|" ./config.yml
-sed -i "s|CertDomain1:.*|CertDomain: \"${CertDomain}\"|" ./config.yml
-sed -i "s|CertDomain2:.*|CertDomain: \"${CertDomain}\"|" ./config.yml
+sed -i "s|NodeID1:.*|NodeID: ${node_id1}|" ./speed4g.yml
+sed -i "s|NodeID2:.*|NodeID: ${node_id2}|" ./speed4g.yml
+sed -i "s|CertDomain1:.*|CertDomain: \"${CertDomain}\"|" ./speed4g.yml
+sed -i "s|CertDomain2:.*|CertDomain: \"${CertDomain}\"|" ./speed4g.yml
 cd /root
 
