@@ -134,4 +134,4 @@ sed -i "s|NodeID2:.*|NodeID: ${node_id2}|" ./config.yml
 sed -i "s|CertDomain1:.*|CertDomain: \"${CertDomain}\"|" ./config.yml
 sed -i "s|CertDomain2:.*|CertDomain: \"${CertDomain}\"|" ./config.yml
 cd /root
-xrayr restart
+
