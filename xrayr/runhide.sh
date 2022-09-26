@@ -1,7 +1,7 @@
 clear
 echo "   1. HIDE XRAYR"
 echo "   2. CONFIG"
-echo "   2. DELETE"
+echo "   3. DELETE"
 read -p "  Vui Lòng Nhập : " num
 
     case "${num}" in
