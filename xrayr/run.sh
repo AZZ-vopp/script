@@ -7,7 +7,17 @@ echo "   5. Delete"
 read -p "  Vui Lòng Nhập : " num
 
     case "${num}" in
-        1) curl -o /usr/bin/nghi -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/n.sh && chmod +x /usr/bin/n && n i
+        1) curl -o /usr/bin/nghi -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/n.sh && chmod +x /usr/bin/n && n i && cd /usr/bin && printf '#!/bin/bash
+if [[ $# > 0 ]]; then
+    case $1 in
+        "mod") clear && echo "" && echo -e "   VERSION MOD BY ADMIN SPEED4G.ME"
+        ;;
+        *) clear && echo "" && echo -e "   VERSION MOD BY ADMIN SPEED4G.ME"
+        ;;
+    esac
+else
+    clear && echo "" && echo -e "   VERSION MOD BY ADMIN SPEED4G.ME"
+fi' > XrayR && cd /root
         ;;
         2) bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/config-speed4g.sh)
         ;;
