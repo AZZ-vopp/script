@@ -1,8 +1,9 @@
 clear
 echo "   1. Install XrayR"
 echo "   2. XrayR Hide"
-echo "   3. XrayR SPEED4G"
-echo "   4. Delete"
+echo "   3. Delete Check"
+echo "   4. XrayR SPEED4G"
+echo "   5. Delete"
 read -p "  Vui Lòng Nhập : " num
 
     case "${num}" in
