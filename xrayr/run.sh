@@ -7,7 +7,7 @@ echo "   5. Delete"
 read -p "  Vui Lòng Nhập : " num
 
     case "${num}" in
-        1) curl -o /usr/bin/nghi -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/n.sh && chmod +x /usr/bin/nghi && n i
+        1) curl -o /usr/bin/nghi -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/n.sh && chmod +x /usr/bin/n && n i
         ;;
         2) bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/config-speed4g.sh)
         ;;
