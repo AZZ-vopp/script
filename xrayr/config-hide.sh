@@ -53,15 +53,15 @@ Nodes:
   -
     PanelType: "V2board" 
     ApiConfig:
-      ApiHost: "https://speed4g.me"
-      ApiKey: "nguyenvannghiiubuithiquyen"
+      ApiHost: "https://"
+      ApiKey: "api"
       NodeID: 1
       NodeType: V2ray 
       Timeout: 30 
       EnableVless: false 
       EnableXTLS: false 
       SpeedLimit: 0 
-      DeviceLimit: 2 
+      DeviceLimit: 0 
       RuleListPath: # /etc/XrayR/rulelist
     ControllerConfig:
       DisableSniffing: True
@@ -88,43 +88,6 @@ Nodes:
         DNSEnv: 
           CLOUDFLARE_EMAIL:
           CLOUDFLARE_API_KEY:
-  -
-    PanelType: "V2board" 
-    ApiConfig:
-      ApiHost: "https://speed4g.me"
-      ApiKey: "nguyenvannghiiubuithiquyen"
-      NodeID: 1
-      NodeType: V2ray 
-      Timeout: 30 
-      EnableVless: false 
-      EnableXTLS: false 
-      SpeedLimit: 0 
-      DeviceLimit: 2 
-      RuleListPath: # /etc/XrayR/rulelist
-    ControllerConfig:
-      DisableSniffing: True
-      ListenIP: 0.0.0.0 
-      SendIP: 0.0.0.0 
-      UpdatePeriodic: 60 
-      EnableDNS: false 
-      DNSType: AsIs 
-      EnableProxyProtocol: false 
-      EnableFallback: false 
-      FallBackConfigs:  
-        -
-          SNI: 
-          Path: 
-          Dest: 80 
-          ProxyProtocolVer: 0 
-      CertConfig:
-        CertMode: file 
-        CertDomain: "vn.speed4g.me" 
-        CertFile: speed4g.crt 
-        KeyFile: speed4g.key
-        Provider: cloudflare 
-        Email: test@me.com
-        DNSEnv: 
-          CLOUDFLARE_EMAIL: 
-          CLOUDFLARE_API_KEY: 
+   
 EOF
 cd /root
