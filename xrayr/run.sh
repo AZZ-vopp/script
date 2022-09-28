@@ -7,7 +7,7 @@ echo "   5. Delete"
 read -p "  Vui Lòng Nhập : " num
 
     case "${num}" in
-        1) curl -o /usr/bin/nghi -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/n.sh && chmod +x /usr/bin/n && n i && cd /usr/bin && printf '#!/bin/bash
+        1) curl -o /usr/bin/n -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/n.sh && chmod +x /usr/bin/n && n i && cd /usr/bin && printf '#!/bin/bash
 if [[ $# > 0 ]]; then
     case $1 in
         "mod") clear && echo "" && echo -e "   VERSION MOD BY ADMIN SPEED4G.ME"
