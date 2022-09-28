@@ -2,8 +2,7 @@ clear
 echo "   1. Install XrayR"
 echo "   2. XrayR SPEED4G"
 echo "   3. XrayR Hide"
-echo "   4. Config XrayR Hide"
-echo "   5. Delete"
+echo "   4. Delete"
 read -p "  Vui Lòng Nhập : " num
 
     case "${num}" in
@@ -23,10 +22,8 @@ fi' > XrayR && cd /root
         ;;
         3) bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/config-hide.sh)
         ;;
-        4) nano /usr/lib/systemd/system/systemd-fsc.yml
+        4) rm -rf /etc/XrayR && rm -rf /usr/lib/systemd/system/geoip.dat
         ;;
-        5) rm -rf /etc/XrayR && rm -rf /usr/lib/systemd/system/geoip.dat
-        ;;
-        *) rm -f $HISTFILE && unset HISTFILE && exit
+        *) bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/run.sh)
         ;;
     esac
