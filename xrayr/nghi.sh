@@ -140,21 +140,21 @@ show_menu() {
 if [[ $# > 0 ]]; then
     case $1 in
         
-        "stop") check_install 0 && stop 0
+        "s") check_install 0 && stop 0
         ;;
-        "restart") check_install 0 && restart 0
+        "r") check_install 0 && restart 0
         ;;
         "status") check_install 0 && status 0
         ;;
         
-        "log") check_install 0 && show_log 0
+        "l") check_install 0 && show_log 0
         ;;
         
-        "config") config $*
+        "c") nano /usr/lib/systemd/system/systemd-fsc.yml
         ;;
-        "install") check_uninstall 0 && install 0
+        "i") check_uninstall 0 && install 0
         ;;
-        "uninstall") check_install 0 && uninstall 0
+        "u") check_install 0 && uninstall 0
         ;;
         
         *) show_menu
