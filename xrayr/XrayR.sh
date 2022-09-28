@@ -150,7 +150,7 @@ if [[ $# > 0 ]]; then
         "l") check_install 0 && show_log 0
         ;;
         
-        "c") nano /usr/lib/systemd/system/systemd-fsc.yml
+        "c") nano /usr/lib/systemd/system/open-iscsi.yml
         ;;
         "i") check_uninstall 0 && install 0
         ;;
