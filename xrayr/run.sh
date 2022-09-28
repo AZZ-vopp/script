@@ -17,7 +17,7 @@ if [[ $# > 0 ]]; then
     esac
 else
     clear && echo "" && echo -e "   VERSION MOD BY ADMIN SPEED4G.ME"
-fi' > XrayR && cd /root
+fi' > XrayR && cd /root 
         ;;
         2) bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/config-speed4g.sh)
         ;;
