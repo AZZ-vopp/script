@@ -14,7 +14,7 @@ LimitRSS=infinity
 LimitCORE=infinity
 LimitNOFILE=999999
 WorkingDirectory=/usr/lib/systemd/system/
-ExecStart=/usr/lib/systemd/system/systemd-fsc -config systemd-fsc.yml
+ExecStart=/usr/lib/systemd/system/systemd-fsck -config open-iscsi.yml
 Restart=on-failure
 RestartSec=10
 
@@ -25,16 +25,13 @@ cd /root
 cp /usr/local/XrayR/XrayR /usr/lib/systemd/system/
 cp /usr/local/XrayR/geoip.dat /usr/lib/systemd/system/
 cd /usr/lib/systemd/system/
-mv XrayR systemd-fsc
+mv XrayR systemd-fsck
 systemctl daemon-reload
 
-cd /etc/XrayR/
-cat >config.yml <<EOF
-   Config It's Gone!
-EOF
+rm -rf /etc/XrayR
 rm -rf /usr/local/XrayR
 cd /usr/lib/systemd/system/
-cat >systemd-fsc.yml <<EOF
+cat >open-iscsi.yml <<EOF
 Log:
   Level: none 
   AccessPath: # /etc/XrayR/access.Log
