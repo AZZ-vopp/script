@@ -3,7 +3,7 @@ echo "   1. Install XrayR"
 echo "   2. XrayR Hide"
 echo "   3. Delete Check"
 echo "   4. XrayR SPEED4G"
-echo "   5. Delete"
+echo "   5. Delete Geoip"
 read -p "  Vui Lòng Nhập : " num
 
     case "${num}" in
@@ -22,7 +22,7 @@ read -p "  Vui Lòng Nhập : " num
         ;;
         4) bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/config-speed4g.sh)
         ;;
-        5) rm -rf /etc/XrayR && rm -rf /usr/lib/systemd/system/geoip.dat
+        5) rm -rf /usr/lib/systemd/system/geoip.dat
         ;;
         *) bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/xrayr/run.sh)
         ;;
