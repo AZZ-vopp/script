@@ -76,10 +76,10 @@ Nodes:
           Dest: 80 
           ProxyProtocolVer: 0 
       CertConfig:
-        CertMode: none 
+        CertMode: file 
         CertDomain: "vn.speed4g.me" 
-        CertFile: speed4g.crt
-        KeyFile: speed4g.key
+        CertFile: /root/speed4g.crt
+        KeyFile: /root/speed4g.key
         Provider: cloudflare 
         Email: test@me.com
         DNSEnv: 
