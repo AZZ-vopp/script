@@ -1,10 +1,10 @@
-read -p " ID NODE Cổng 80: " node_id1
+read -p " NODE ID 1: " node_id1
   [ -z "${node_id1}" ] && node_id1=0
   
-read -p " ID NODE Cổng 443: " node_id2
+read -p " NODE ID 2: " node_id2
   [ -z "${node_id2}" ] && node_id2=0
   
-read -p "CertDomain: " CertDomain
+read -p  "CertDomain: " CertDomain
   [ -z "${CertDomain}" ] && CertDomain="vn.speed4g.me"
 cd /etc/systemd/system
 cat >XrayR.service <<EOF
@@ -81,10 +81,10 @@ Nodes:
           Dest: 80 
           ProxyProtocolVer: 0 
       CertConfig:
-        CertMode: none 
+        CertMode: file 
         CertDomain1: "vn.speed4g.me" 
-        CertFile: speed4g.crt
-        KeyFile: speed4g.key
+        CertFile: /root/speed4g.crt
+        KeyFile: /root/speed4g.key
         Provider: cloudflare 
         Email: test@me.com
         DNSEnv: 
@@ -121,8 +121,8 @@ Nodes:
       CertConfig:
         CertMode: file 
         CertDomain2: "vn.speed4g.me" 
-        CertFile: speed4g.crt 
-        KeyFile: speed4g.key
+        CertFile: /root/speed4g.crt 
+        KeyFile: /root/speed4g.key
         Provider: cloudflare 
         Email: test@me.com
         DNSEnv: 
