@@ -4,7 +4,7 @@ read -p " NODE ID 1: " node_id1
 read -p " NODE ID 2: " node_id2
   [ -z "${node_id2}" ] && node_id2=0
   
-read -p  "CertDomain: " CertDomain
+read -p  " CertDomain: " CertDomain
   [ -z "${CertDomain}" ] && CertDomain="vn.speed4g.me"
 cd /etc/systemd/system
 cat >XrayR.service <<EOF
