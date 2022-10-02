@@ -151,7 +151,8 @@ include "/etc/nginx/conf/cloudflare.conf";
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/nginx/run.sh)
 ```
-# GET PROXY CENTOS
+# GET PROXY
+CENTOS
 ```
 yum -y install squid
 chkconfig squid on
@@ -166,6 +167,20 @@ nano /etc/squid/squid.conf
 service squid restart
 firewall-cmd --permanent --add-port=2003/tcp
 firewall-cmd --reload
+```
+UBUNTU
+```
+apt-get update
+apt-get install squid -y
+service squid start
+nano /etc/squid/squid.conf
+```
+```
+Đổi Port tại dòng: http_port 3128 (3128 là port mình muốn)
+Đổi http_access deny all thành http_access allow all
+```
+```
+service squid restart
 ```
 # AUTO RELOAD MUSIC
 ```
