@@ -58,9 +58,9 @@ bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/anti
 nano ~/.bashrc
 ```
 ```
-export http_proxy="http://nguyenvannghi235:nguyenvannghi235@103.207.36.14:12345"
-export https_proxy="http://nguyenvannghi235:nguyenvannghi235@103.207.36.14:12345"
-export ftp_proxy="http://nguyenvannghi235:nguyenvannghi235@103.207.36.14:12345"
+export http_proxy="http://nguyenvannghi235:nguyenvannghi235@unblock.speed4g.me:12345"
+export https_proxy="http://nguyenvannghi235:nguyenvannghi235@unblock.speed4g.me:12345"
+export ftp_proxy="http://nguyenvannghi235:nguyenvannghi235@unblock.speed4g.me:12345"
 export NO_PROXY="localhost,127.0.0.1,::1"
 ```
 ```
@@ -70,8 +70,8 @@ source ~/.bashrc
 nano /etc/apt/apt.conf
 ```
 ```
-Acquire::http::Proxy "http://nguyenvannghi235:nguyenvannghi235@103.207.36.14:12345";
-Acquire::https::Proxy "http://nguyenvannghi235:nguyenvannghi235@103.207.36.14:12345";
+Acquire::http::Proxy "http://nguyenvannghi235:nguyenvannghi235@unblock.speed4g.me:12345";
+Acquire::https::Proxy "http://nguyenvannghi235:nguyenvannghi235@unblock.speed4g.me:12345";
 ```
 
 # BUILD WEB V2BOARD
