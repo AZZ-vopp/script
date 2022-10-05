@@ -3,7 +3,7 @@ echo "   1. INSTALL"
 echo "   2. CONFIG"
 echo "   3. GET SSL"
 echo "   4. RESTART"
-echo "   5. AUTO RESTART"
+echo "   5. AUTO CACHE"
 read -p "  Vui Lòng Nhập : " num
 
     case "${num}" in
