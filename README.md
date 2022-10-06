@@ -1,3 +1,7 @@
+# AAPANEL
+```
+bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/aapanel/run.sh)
+```
 # INSTALL X-UI
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
