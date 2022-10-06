@@ -1,0 +1,47 @@
+server {
+        listen 80;
+
+        location /speed4g.me {
+                proxy_pass http://103.173.157.131:999;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection "upgrade";
+                proxy_set_header Host $http_host;
+        }
+
+        location /4gviet.net {
+                proxy_pass http://103.207.38.29:1020;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection "upgrade";
+                proxy_set_header Host $http_host;
+        }
+        location /xport {
+                proxy_pass http://42.96.2.146:1030;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection "upgrade";
+                proxy_set_header Host $http_host;
+        }
+        location /ngocvinh4g {
+                proxy_pass http://42.96.2.146:1040;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection "upgrade";
+                proxy_set_header Host $http_host;
+        }
+}
+server {
+        listen 443 ssl http2;
+        ssl_protocols TLSv1.2 TLSv1.3;
+        ssl_certificate /root/speed4g.crt; 
+        ssl_certificate_key /root/speed4g.key;
+        ssl_session_cache   shared:SSL:10m;             
+        ssl_session_timeout 10m;      
+        server_name  localhost;
+        location /speed4g.me {
+               grpc_pass grpcs://103.173.157.131:888;
+               grpc_set_header X-Real-IP $remote_addr;
+        } 
+        
+}
