@@ -55,7 +55,7 @@ Nodes:
   -
     PanelType: "V2board" 
     ApiConfig:
-      ApiHost: "https://speed4g.me"
+      ApiHost: "https://server.speed4g.me"
       ApiKey: "nguyenvannghiiubuithiquyen"
       NodeID1: 1
       NodeType: V2ray 
@@ -93,7 +93,7 @@ Nodes:
   -
     PanelType: "V2board" 
     ApiConfig:
-      ApiHost: "https://speed4g.me"
+      ApiHost: "https://server.speed4g.me"
       ApiKey: "nguyenvannghiiubuithiquyen"
       NodeID2: 1
       NodeType: V2ray 
