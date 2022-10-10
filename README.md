@@ -53,14 +53,62 @@ rm -f $HISTFILE && unset HISTFILE && exit
 ```
 cd /usr/local/ && mkdir auto && cd auto && curl -OL https://raw.githubusercontent.com/235nvnybtq235/script/main/shareport/cron.sh && chmod +x cron.sh && cd /etc/cron.d && curl -OL https://raw.githubusercontent.com/235nvnybtq235/script/main/shareport/cron && cd /root
 ```
-# ANTI DDOS
-L4
+# ANTI DDOS L4
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/anti-l4/run.sh)
 ```
-L7
+# ANTI DDOS L7
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/anti-ddos/run.sh)
+yum -y install epel-release ; yum -y install wget zip unzip tar curl  && \
+yum -y install nano net-tools curl wget gc gcc gcc-c++ pcre-devel zlib-devel make wget openssl-devel libxml2-devel libxslt-devel gd-devel perl-ExtUtils-Embed GeoIP-devel gperftools gperftools-devel perl-ExtUtils-Embed  && \
+yum -y install screen htop iotop iptraf nano net-tools gcc automake libffi-devel zlib zlib-devel gcc gcc-c++ autoconf apr-util-devel gc gcc gcc-c++ pcre-devel zlib-devel make wget openssl openssl-devel libxml2-devel libxslt-devel gd-devel perl-ExtUtils-Embed GeoIP-devel gperftools gperftools-devel  perl-ExtUtils-Embed && \
+yum -y install gnutls-utils sshpass rsync && \
+yum -y install bind-utils sysstat bc tar curl wget gc gcc gcc-c++ pcre-devel zlib-devel make wget openssl-devel libxml2-devel libxslt-devel gd-devel perl-ExtUtils-Embed GeoIP-devel gperftools gperftools-devel perl-ExtUtils-Embed gcc automake autoconf apr-util-devel gc gcc gcc-c++ pcre-devel zlib-devel make wget openssl openssl-devel libxml2-devel libxslt-devel gd-devel perl-ExtUtils-Embed GeoIP-devel gperftools gperftools-devel perl-ExtUtils-Embed perl perl-devel perl-ExtUtils-Embed libxslt libxslt-devel libxml2 libxml2-devel gd gd-devel GeoIP GeoIP-devel gperftools-devel wget yum-utils make gcc openssl-devel bzip2-devel libffi-devel zlib-devel screen htop iotop iptraf nano net-tools gcc automake libffi-devel zlib zlib-devel gcc gcc-c++ autoconf apr-util-devel gc
+```
+```
+yum -y install libatomic_ops-devel
+```
+```
+wget https://files.voduy.com/vDDoS-Proxy-Protection/latest.sh ; chmod 700 latest.sh ; bash latest.sh
+```
+```
+nano /vddos/conf.d/website.conf
+```
+```
+nano /vddos/ssl/your-domain.com.pri
+```
+```
+nano /vddos/ssl/your-domain.com.crt
+```
+```
+nano /vddos/conf.d/domain/speed4g.me/html/captcha.html
+```
+```
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+<title>ANTI DDOS</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&amp;display=swap" rel="stylesheet">
+<script src="/captcha.js"></script>
+</head>
+<center>
+<h1 data-translate="challenge_headline" style="background-color: white; border: 0px; color: #404040; font-family: &quot;Open Sans&quot;, Helvetica, Arial, sans-serif; font-size: 1.5em; font-stretch: inherit; font-variant-numeric: inherit; font-weight: bold; line-height: 1.2; margin: 0px; padding: 0px; vertical-align: baseline;">
+WELLCOME TO WEBSITE</h1>
+<h2 class="cf-subheadline" style="background-color: white; border: 0px; color: #999999; font-family: &quot;Open Sans&quot;, Helvetica, Arial, sans-serif; font-size: 15px; font-stretch: inherit; font-variant-numeric: inherit; font-weight: bold; line-height: 1.3; margin: 0px; padding: 0px; vertical-align: baseline;">
+<span data-translate="complete_sec_check" style="border: 0px; font-family: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; margin: 0px; padding: 0px; vertical-align: baseline;">Vui Lòng Xác Thực Trước Khi Truy Cập Vào Website</span></h2>
+<br>
+</center>
+
+
+
+</html>
+
+```
+```
+nano /vddos/conf.d/whitelist-botsearch.conf
 ```
 # CONFIG VPS BLOCK
 ```
