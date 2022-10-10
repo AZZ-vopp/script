@@ -6,8 +6,7 @@ echo "   4. Restart"
 read -p "  Vui Lòng Nhập : " num
 
     case "${num}" in
-        1) 
-        yum -y install epel-release ; yum -y install wget zip unzip tar curl  && \
+        1) yum -y install epel-release ; yum -y install wget zip unzip tar curl  && \        
         yum -y install nano net-tools curl wget gc gcc gcc-c++ pcre-devel zlib-devel make wget openssl-devel libxml2-devel libxslt-devel gd-devel perl-ExtUtils-Embed GeoIP-devel gperftools gperftools-devel perl-ExtUtils-Embed  && \
         yum -y install screen htop iotop iptraf nano net-tools gcc automake libffi-devel zlib zlib-devel gcc gcc-c++ autoconf apr-util-devel gc gcc gcc-c++ pcre-devel zlib-devel make wget openssl openssl-devel libxml2-devel libxslt-devel gd-devel perl-ExtUtils-Embed GeoIP-devel gperftools gperftools-devel  perl-ExtUtils-Embed && \
         yum -y install gnutls-utils sshpass rsync && \
@@ -20,6 +19,6 @@ read -p "  Vui Lòng Nhập : " num
         ;;
         4) vddos restart
         ;;
-        *) exit
+        *) echo "Nhập Lại"
         ;;
     esac
