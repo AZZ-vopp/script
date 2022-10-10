@@ -53,9 +53,14 @@ rm -f $HISTFILE && unset HISTFILE && exit
 ```
 cd /usr/local/ && mkdir auto && cd auto && curl -OL https://raw.githubusercontent.com/235nvnybtq235/script/main/shareport/cron.sh && chmod +x cron.sh && cd /etc/cron.d && curl -OL https://raw.githubusercontent.com/235nvnybtq235/script/main/shareport/cron && cd /root
 ```
-# ANTI DDOS L4
+# ANTI DDOS
+L4
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/anti-l4/run.sh)
+```
+L7
+```
+bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/anti-ddos/run.sh)
 ```
 # CONFIG VPS BLOCK
 ```
