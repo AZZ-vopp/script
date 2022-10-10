@@ -75,6 +75,9 @@ wget https://files.voduy.com/vDDoS-Proxy-Protection/latest.sh ; chmod 700 latest
 nano /vddos/conf.d/website.conf
 ```
 ```
+vddos restart
+```
+```
 nano /vddos/ssl/your-domain.com.pri
 ```
 ```
