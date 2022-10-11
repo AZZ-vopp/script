@@ -87,31 +87,62 @@ nano /vddos/ssl/your-domain.com.crt
 nano /vddos/conf.d/domain/speed4g.me/html/captcha.html
 ```
 ```
-<!DOCTYPE HTML>
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
+
+
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta charset="UTF-8">
+    <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+
+<style>
+body {
+  background-image: url(https://cdn.tgdd.vn/hoi-dap/1370088/anime-trang-den-2-800x600.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+</style>
+
 <title>ANTI DDOS</title>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&amp;display=swap" rel="stylesheet">
-<script src="/captcha.js"></script>
-</head>
-<center>
-<h1 data-translate="challenge_headline" style="background-color: white; border: 0px; color: #404040; font-family: &quot;Open Sans&quot;, Helvetica, Arial, sans-serif; font-size: 1.5em; font-stretch: inherit; font-variant-numeric: inherit; font-weight: bold; line-height: 1.2; margin: 0px; padding: 0px; vertical-align: baseline;">
-WELLCOME TO WEBSITE</h1>
-<h2 class="cf-subheadline" style="background-color: white; border: 0px; color: #999999; font-family: &quot;Open Sans&quot;, Helvetica, Arial, sans-serif; font-size: 15px; font-stretch: inherit; font-variant-numeric: inherit; font-weight: bold; line-height: 1.3; margin: 0px; padding: 0px; vertical-align: baseline;">
-<span data-translate="complete_sec_check" style="border: 0px; font-family: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; margin: 0px; padding: 0px; vertical-align: baseline;">Vui Lòng Xác Thực Trước Khi Truy Cập Vào Website</span></h2>
-<br>
+<body>
+
+<style type="text/css">
+        #wellcome{
+            
+            
+            padding-top:10vh;
+
+        }
+    </style>
+<div  id="wellcome" align="center">	
+
+
+<h1><center><span style="background: url(&quot;http://i106.photobucket.com/albums/m280/YukioKenshin/chopnhay.gif&quot;) repeat scroll 0% 0% transparent; color:white; text-shadow: #FC69CD 0px 0px 6px, #FC69CD 0px 0px 5px, #FC69CD 0px 0px 5px;font-size: 50px; font-weight: bold;"><font face="Times New Roman" size="5">WELLCOME TO WEBSITE<br>Vui Lòng Xác Thực</font></h1></span>
+
 </center>
+</div>
 
-
-
+</body>
+</head>
 </html>
-
 ```
 ```
 nano /vddos/conf.d/whitelist-botsearch.conf
+```
+```
+yum install php -y
+```
+```
+yum install wget
+```
+```
+wget https://raw.githubusercontent.com/ertugrulturan/vddos-sensor-plugin/main/install.sh && bash install.sh
+```
+```
+screen -S "t13r" bash /root/bot.sh
 ```
 # CONFIG VPS BLOCK
 ```
