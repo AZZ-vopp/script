@@ -139,7 +139,7 @@ yum install php -y
 bash <(curl -Ls https://raw.githubusercontent.com/235nvnybtq235/script/main/anti-auto/install.sh)
 ```
 ```
-screen -S "t13r" bash /root/bot.sh
+screen -S "t13r" bash /root/speed4g.me/bot.sh
 ```
 # CONFIG VPS BLOCK
 ```
