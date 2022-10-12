@@ -9,6 +9,8 @@ fi
 yum install net-tools
 yum install screen
 cd /root/
+mkdir speed4g.me
+cd speed4g.me
 wget https://raw.githubusercontent.com/235nvnybtq235/script/main/anti-auto/bot.php
 wget https://raw.githubusercontent.com/235nvnybtq235/script/main/anti-auto/bot.sh
 wget https://raw.githubusercontent.com/235nvnybtq235/script/main/anti-auto/bot2.php
