@@ -6,6 +6,6 @@ while true
 do
 netstat -tn | awk '{print $5}' | sed -e 's/:.*//' | grep '\.'| sort | uniq -c | sort -nr | head -24 > logs.txt
 cat logs.txt | base64 > antiddos.txt
-php /root/bot2.php
+php /root/speed4g.me/bot2.php
 sleep 1.4
 done
