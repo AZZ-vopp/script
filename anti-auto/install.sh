@@ -6,9 +6,9 @@ fi
 if [ ! -f /vddos/vddos ]; then
 	echo "Chưa Cài Đặt Anti"
 fi
+yum install php -y
 yum install net-tools
 yum install screen
-yum install php -y
 cd /root/
 wget https://raw.githubusercontent.com/235nvnybtq235/script/main/anti-auto/bot.php
 wget https://raw.githubusercontent.com/235nvnybtq235/script/main/anti-auto/bot.sh
